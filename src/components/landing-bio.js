@@ -18,11 +18,14 @@ const OuterContainer = styled.div`
 const Description = styled.p`
   padding: 0;
   margin-bottom: 1rem;
-  font-size: 1.4rem;
+  font-size: 2.4rem;
+  color: gray;
+  font-weight: bold;
 `
 
 const NameHeader = styled.h1`
-  font-size: 3.5rem;
+  font-size: 5.5rem;
+  color: #ff80cc;
   margin-bottom: 0;
 `
 
@@ -41,7 +44,7 @@ const LandingBio = () => (
       <OuterContainer>
         <Container>
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>Software Developer</Description>
+          <Description>a band</Description>
         </Container>
       </OuterContainer>
     )}

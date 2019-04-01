@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Julia Doe`,
+    title: `Beatmap`,
     description: `A minimal blog starter built with Gatsbyjs. The needes Gatsby files are included.`,
-    author: `@niklasmtj`,
+    author: `@tomdyson`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,6 +28,13 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-reading-time`,
+          {
+            resolve: "gatsby-remark-embed-youtube",
+            options: {
+              width: 800,
+              height: 400
+            }
+          },
         ],
       },
     },
